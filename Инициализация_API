@@ -1,0 +1,27 @@
+
+/*
+
+1. Получить API-Key
+2. Создать pod и добавить необходимые модули:
+
+MapKit - ядро. Содержит классы и протоколы для работы с картой.
+MapKit Directions — используется для построения маршрутов для автомобилей.
+MapKit Places — используется для работы с панорамами.
+MapKit Search — используется для поиска по карте и геокодирования.
+MapKit Transport — используется для построения маршрутов для пешеходов, велосипедов, 
+                   а также маршрутов с использованием общественного транспорта.
+                   
+3.В AppDelegate.swift указать ваш API-Key
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    YMKMapKit.setApiKey("Ваш API ключ")
+ }
+ 
+4. В Вашем info.plist получить разрешение на использование геолокации
+5. В небходимом Storyboard/на необходимый View добавить элемент UIView и задать ему класс YMKMapView.
+6. В привязанном ViewController импортировать YandexMapKit
+7. Собрать приложение. 
+Ссылка на документацию для IOS - https://tech.yandex.ru/maps/mapkit/doc/3.x/concepts/ios/quickstart-docpage/
+
+*/
+
