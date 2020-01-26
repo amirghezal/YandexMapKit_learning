@@ -21,7 +21,14 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     отслеживание геолокаци методом requestWhenInUseAuthorization(). 
 5. В небходимом Storyboard/на необходимый View добавить элемент UIView и задать ему класс YMKMapView.
 6. В привязанном ViewController импортировать YandexMapKit
-7. Собрать приложение. 
+7. Собрать приложение. У вас открются привычные яндекс карты. 
+   Данный код переместит камеру на главный офис яндекса: 
+   
+   let mapPoint = YMKPoint(latitude: 55.734102, longitude: 37.587598) 
+   mapView.mapWindow.map.move(with: YMKCameraPosition(target: mapPoint, zoom: 18, azimuth: 5, tilt: 45),
+                                    animationType: YMKAnimation(type: .linear, duration: 1),
+                                    cameraCallback: nil)
+
 Ссылка на документацию для IOS - https://tech.yandex.ru/maps/mapkit/doc/3.x/concepts/ios/quickstart-docpage/
 
 */
