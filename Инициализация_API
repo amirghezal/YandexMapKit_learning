@@ -17,7 +17,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     YMKMapKit.setApiKey("Ваш API ключ")
  }
  
-4. В Вашем info.plist получить разрешение на использование геолокации
+4. В Вашем info.plist добавить описание для whenInUse. Импортировать CoreLocation и запросить разрешение на 
+    отслеживание геолокаци методом requestWhenInUseAuthorization(). 
 5. В небходимом Storyboard/на необходимый View добавить элемент UIView и задать ему класс YMKMapView.
 6. В привязанном ViewController импортировать YandexMapKit
 7. Собрать приложение. 
